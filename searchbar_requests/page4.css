@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+    background: -webkit-linear-gradient(left, #4e0066,#620080,#8900b3, #b000e6);
+}
+#result{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.searchShow{
+    float: left;
+    width: 85%;
+}
+.contt{
+    background-color: white;
+    width: 60%;
+    height: 400px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    visibility: hidden;
+}
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+.add-to-cart{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 60px;
+    background: -webkit-linear-gradient(left, #4e0066,#620080,#8900b3, #b000e6);
+}
+.add-to-cart a{
+    color: white;
+    margin-top: 15px;
+}
+.add-to-cart a:hover{
+    text-decoration: none;
+    color: white;
+}
+.add-to{
+    margin-left: 10px;
+}
+.contt2{
+    background-color: white;
+    width: 97%;
+    height: 400px;
+    margin-right: 50px;
+    margin-left: 70px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.idsearch{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.idsearch:hover{
+    color: white;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+}
+.add-to-cart-btn{
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.infojson{
+    font-size: 17px;
+}
+.catalog-for-all{
+    display: grid;
+    grid-template-columns: 43% 43%;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px 500px 500p;
+}
+.section{
+    width: 60%;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    top: -1000px;
+    left: 20%;
+    transition: 0.5s;
+    overflow-y:auto;
+    margin: auto;
+}
+.selection div{
+    width: 100%;
+    height: 210px;
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    position: relative;
+    margin:5px auto;
+}
+.section div img{
+    width: 300px;
+    height: 100%;
+}
+h1.zero::before{
+    opacity: 0;
+}
+section.display{
+    top:10px;
+}
+.img-search{
+    visibility: visible;
+    opacity: 1;
+}
+.non{
+    visibility: hidden;
+    opacity: 0;
+}

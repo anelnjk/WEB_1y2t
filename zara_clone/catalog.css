@@ -1,0 +1,179 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.logo img{
+    width: 190px;
+    margin-left: 20px;
+}
+.pop-up-menu{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 30px;
+}
+.pop-up-button{
+    width: 40px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: -30px;
+    background-color: white;
+    border: none;
+}
+.pop-up-button span{
+    width: 20px;
+    height: 1.5px;
+    background-color: black;
+    border: 1px solid black;
+    display:block;
+    margin: 4px;
+    margin-left: 9px;
+}
+.menu-itself{
+    visibility: hidden;
+    font-weight: bold;
+    font-size: 20px;
+    width: 1200px;
+    margin-top: -35px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -1150px;
+    justify-content: space-around;
+    transition: 1s;
+}
+.menu-itself li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.pop-up-button + .menu-itself:active, button:focus+.menu-itself{
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 0px;
+    transition: 1s;
+}
+.btn{
+    margin-top: 100px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+}
+.menu ul{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.menu ul li a:hover{
+    color: black;
+    text-shadow: 1px 2px 3px gray;  
+}
+a{
+    color: black;
+}
+.container-1 {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+.container-2{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 200px;
+    z-index: -1;
+}
+.container-2-items{
+    width: 300px;
+}
+.container-2-items:hover img{
+    width: 290px;
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.container-2-items img{
+    width: 275px;
+}
+.container-2-items p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.footer{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    margin-top: 900px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-left: 100px;
+}
+.link{
+    margin: 15px;
+}
+.link a{
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 2px 3px gray; 
+}
+.menu-itself .menu-itself-items a:hover{
+    color: black;
+}
+.pic1{
+    animation-name: pic1anim;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pic2{
+    animation-name: pic2anim;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pic3{
+    animation-name: pic3anim;
+    animation-duration: 4s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes pic1anim{
+    0%{margin-top: 0px;}
+    50%{margin-top: -20px;}
+    100%{margin-top: 0px}
+
+}
+@keyframes pic2anim{
+    0%{margin-top: 0px;}
+    50%{margin-top: -20px;}
+    100%{margin-top: 0px}
+    
+}
+@keyframes pic3anim{
+    0%{margin-top: 0px;}
+    50%{margin-top: -20px;}
+    100%{margin-top: 0px}
+    
+}

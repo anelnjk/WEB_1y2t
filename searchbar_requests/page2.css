@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+    background: -webkit-linear-gradient(left, #4e0066,#620080,#8900b3, #b000e6);
+}
+.container{
+    background-color: white;
+    border-radius: 16px;
+}
+.carousel{
+}
+.carousel-item img{
+    width: 100%;
+}
+.container-2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.image-float{
+    width: 380px;
+    border-radius: 10px;
+}
+.pic1{
+    animation-name: pic1anim;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pic2{
+    animation-name: pic2anim;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pic3{
+    animation-name: pic3anim;
+    animation-duration: 4s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.pic1:hover, .pic2:hover, .pic3:hover{
+    cursor: pointer;
+}
+@keyframes pic1anim{
+    0%{margin-top: 0px;}
+    50%{margin-top: -20px;}
+    100%{margin-top: 0px}
+
+}
+@keyframes pic2anim{
+    0%{margin-top: 0px;}
+    50%{margin-top: -20px;}
+    100%{margin-top: 0px}
+    
+}
+@keyframes pic3anim{
+    0%{margin-top: 0px;}
+    50%{margin-top: -20px;}
+    100%{margin-top: 0px}
+    
+}
+#zag{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: white;
+    height: 70px;
+}
+.main-text{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    color: white;
+    font-size: 17px;
+}
+footer{
+    background-color: white;
+    height: 100px;
+    margin-top: 30px;
+}
+#p{
+    position:absolute;
+    margin-left: 370px;
+   color: black;
+   font-size: 27px;
+   font-weight: bold;
+   width: 45%;
+}

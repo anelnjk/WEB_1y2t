@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Choose your friend</title>
+        <meta charset="utf-8"/>
+        <meta name="description">
+        <link rel="stylesheet" href="page1.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Choose a best friend for yourself!</h1>
+                <p class="lead">Our site will help you to choose a friend! Search for specie that you are interested in and get some more information about it. 
+                    Dont be shy and try it out!</p>
+                <hr class="my-4">
+                <p>This button is for cat lovers ^^</p>
+                <p class="lead">
+                    <button class="btnn paw" style="margin-left: 0; width: 120px; height: 50px;">
+                        <a href="page2.html" style="color: white; font-size: 30px; font-family: 'Poppins', sans-serif; text-decoration: none;">paw</a>
+                    </button> </p>
+              </div>
+              <h3 style="margin-left: 100px;">Before searching, please, choose type of dog that is more suitable for you!</h3>
+        </div>
+        <br />
+            
+            <button type="button" class="btnn" id="btn-long">Long-haired dogs</button>
+            <button type="button" class="btnn" id="btn-short">Shorhaired dogs</button><br />
+        
+        <div class="container">
+            
+            <div class="cont-item one" >
+                <br><br><br>
+                <h2 align="center">Search for dog</h2>   
+                <br />
+                <div align="center">
+                    <input type="text" name="search" id="search" placeholder="Specie name" class="form-control" />
+                </div>
+                <ul class="list-group" id="result"></ul>
+                <br />
+            </div>
+            <div class="cont-item two" >
+                <img style="width: 650px; margin-left: 260px;" src="" id="dog-img" >
+                <p id="p1" align="center" style="font-size: 30px;"></p>
+                <p id="p2" align="center" style="font-size: 30px;"></p>
+            </div>
+           
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script  type="text/javascript" src="page1.js"></script>
+    </body>
+
+    </html>

@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.logo img{
+    width: 190px;
+    margin-left: 20px;
+}
+.pop-up-menu{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 30px;
+}
+.pop-up-button{
+    width: 40px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: -30px;
+    background-color: white;
+    border: none;
+}
+.pop-up-button span{
+    width: 20px;
+    height: 1.5px;
+    background-color: black;
+    border: 1px solid black;
+    display:block;
+    margin: 4px;
+    margin-left: 9px;
+}
+.menu-itself{
+    visibility: hidden;
+    font-weight: bold;
+    font-size: 20px;
+    width: 1200px;
+    margin-top: -35px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -1150px;
+    justify-content: space-around;
+    transition: 1s;
+}
+.menu-itself li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.pop-up-button + .menu-itself:active, button:focus+.menu-itself{
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 0px;
+    transition: 1s;
+}
+.btn{
+    margin-top: 100px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+}
+.menu ul{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.menu ul li a:hover{
+    color: black;
+    text-shadow: 1px 2px 3px gray;  
+}
+a{
+    color: black;
+}
+.container-1 {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+.container-2{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 200px;
+    z-index: -1;
+}
+.footer{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    margin-top: 1000px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-left: 100px;
+}
+.link{
+    margin: 15px;
+}
+.link a{
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 2px 3px gray; 
+
+}
+.inside-container{
+    position: absolute;
+    margin-left: 250px;
+    width: 550px;
+    height: 700px;
+}
+.inside-container .photo-cont{
+    float:left;
+    width: 300px;
+}
+.inside-container .details-cont{
+    float: right;
+    margin-top: 45px;
+    width: 160px;
+}
+.big-photo img{
+    width: 250px;
+    position: absolute;
+    margin-top: 50px;
+}
+hr{
+    height: 1px;
+    background-color: black;
+    width: 150px;
+}
+.mini-photo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 290px;
+    margin-right: -20px;
+    float: right;
+}
+.big-photo{
+    position: absolute;
+}
+.big-phot .pic1{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 20px;
+
+}
+img:hover{
+    cursor: pointer;
+}
+.mini-photo img{
+    width: 30px;
+    margin-left: 10px;
+}
+.mini-photo img:hover{
+    filter: opacity(0.3);
+    transition: 0.2s;
+}
+.main-btn{
+    margin-top: -25px;
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.main-btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+.size{
+    width: 150px;
+    height: 20px;
+    border: none;
+    background-color: white;
+}
+
+.size:hover{
+    background-color: lightgrey;
+    color: black;
+    transition: 0.5s;
+}
+.size:focus{
+    background-color: lightgrey;
+}
+.forpic1:focus .pic2, .pic3, .pic4{
+    visibility: hidden;
+}
+.pic1{
+    animation-name: pic1anim;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+
+}
+.pic2{
+    animation-name: pic2anim;
+}
+.pic3{
+    animation-name: pic3anim;
+}
+.pic4{
+    animation-name: pic4anim;
+}
+@keyframes pic1anim{
+    0%{transition: 1s;}
+    50%{margin-top: 70px; transition: 2s;}
+    100%{margin-top: 100px; transform: 2s;}
+}

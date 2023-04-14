@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up/Sign In</title>
+        <meta charset="utf-8"/>
+        <meta name="description">
+        <link rel="stylesheet" href="page1.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="select">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  LANGUAGE
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item a-link active " href="#" language='english' >ENG</a>
+                    <a class="dropdown-item a-link" href="#" language='kazakh'>ҚАЗ</a>
+                    <a class="dropdown-item a-link" href="#" language='russian'>РУС</a>
+                </div>
+              </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="title-text">
+              <div class="title login" id="loginformlang" >Login Form</div>
+              <div class="title signup" id="signupformlang">Signup Form</div>
+            </div>
+            <div class="form-container">
+              <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login" id="loginlang">Login</label>
+                <label for="signup" class="slide signup" id="signuplang">Signup</label>
+                <div class="slider-tab"></div>
+              </div>
+              <div class="form-inner">
+                <form id="formGet" class="login">
+                  <div class="field">
+                    <input type="text" id="user" placeholder="Username">
+                  </div>
+                  <div class="field">
+                    <input type="password" id="password" placeholder="Password">
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" id="submitLIlang" value="Login">
+                  </div>
+                  <div class="signup-link" id="signuplinklang">Do not have account? 
+                      <a href="#" id="signupnowlang">Signup now</a></div>
+                </form>
+                <form id="formPost" action="page1.html" class="signup">
+                  <div class="field">
+                    <input type="text" id="email" placeholder="Email Address">
+                  <span class="emailMess" style="font-size: 14px; color: red;"></span>
+                  </div>
+                  <div class="field">
+                    <input type="password" id="password2" placeholder="Password">
+                    <span class="passMess" style="font-size: 15px; color: red;" ></span>
+                  </div>
+                  <div class="field">
+                    <input type="password" id="password2-2" placeholder="Confirm password">
+                    <span class="pass2Mess" style="font-size: 16px; color: red;"></span>
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" id="submitSUlang" value="Signup">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script  type="text/javascript" src="page1.js"></script>
+        
+        
+    </body>
+</html>

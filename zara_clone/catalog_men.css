@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+img:hover{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+}
+.menu ul{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.menu ul li a:hover{
+    color: black;
+    text-shadow: 1px 2px 3px gray;  
+}
+a{
+    color: black;
+}
+.container-2 {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+.logo img{
+    width: 190px;
+    margin-left: 20px;
+}
+.pop-up-menu{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 30px;
+}
+.pop-up-button{
+    width: 40px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: -30px;
+    background-color: white;
+    border: none;
+}
+.pop-up-button span{
+    width: 20px;
+    height: 1.5px;
+    background-color: black;
+    border: 1px solid black;
+    display:block;
+    margin: 4px;
+    margin-left: 9px;
+}
+.menu-itself{
+    visibility: hidden;
+    font-weight: bold;
+    font-size: 20px;
+    width: 1200px;
+    margin-top: -35px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -1150px;
+    justify-content: space-around;
+    transition: 1s;
+}
+.menu-itself li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.pop-up-button + .menu-itself:active, button:focus+.menu-itself{
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 0px;
+    transition: 1s;
+}
+.container-1 {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 10px;
+    margin: auto;
+    z-index: 1;
+}
+.container-2{
+    z-index: -1;
+    width: 1200px;
+    margin: auto;
+}
+.catalog-2, .catalog-3{
+    position: absolute;
+
+}
+.catalog-3{
+    width: 700px;
+    margin-left: 480px;
+}
+.catalog-3-items{
+    margin-top: 1750px;
+}
+.catalog-3 img{
+    width: 340px;
+}
+.catalog-2-items{
+    margin-top: 900px;
+}
+.catalog-1{
+    margin-top: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.catalog-6{
+    position: absolute;
+    margin-top: 3500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.catalog-1-items img{
+    width: 220px;
+}
+.catalog-6 img{
+    width: 275px;
+}
+.catalog-1-items, .catalog-6-items{
+
+    margin-left: 5px;
+}
+#p1{
+    position: absolute;
+    margin-top: 690px;
+    margin-left: 550px;
+    width: 600px;
+    font-size: 10px;
+}
+#p2{
+    position: absolute;
+    margin-top: 1660px;
+    margin-left: 500px;
+    width: 600px;
+    font-size: 10px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin-top: 4100px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-left: 100px;
+}
+.link{
+    margin: 15px;
+}
+.link a{
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 2px 3px gray; 
+}
+.menu-itself .menu-itself-items a:hover{
+    color: black;
+}

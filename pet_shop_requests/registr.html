@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up/ Sign in</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="registation form"/>
+        <link rel="stylesheet" href="registr.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="title-text">
+              <div class="title login">Login Form</div>
+              <div class="title signup">Signup Form</div>
+            </div>
+            <div class="form-container">
+              <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab"></div>
+              </div>
+              <div class="form-inner">
+                <form id="formGet" class="login">
+                  <div class="field">
+                    <input type="text" id="user" placeholder="Username">
+                  </div>
+                  <div class="field">
+                    <input type="password" id="password" placeholder="Password">
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login">
+                  </div>
+                  <div class="signup-link">Do not have account? <a href="">Signup now</a></div>
+                </form>
+                <form id="formPost" action="page1.html" class="signup">
+                  <div class="field">
+                    <input type="text" id="email" placeholder="Email Address">
+                  <span class="emailMess" style="font-size: 14px; color: red;"></span>
+                  </div>
+                  <div class="field">
+                    <input type="password" id="password2" placeholder="Password">
+                    <span class="passMess" style="font-size: 15px; color: red;" ></span>
+                  </div>
+                  <div class="field">
+                    <input type="password" id="password2-2" placeholder="Confirm password">
+                    <span class="pass2Mess" style="font-size: 16px; color: red;"></span>
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script type="text/javascript" src="registr.js"></script>
+    </body>
+</html>
